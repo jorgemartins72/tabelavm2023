@@ -11,3 +11,7 @@ phases:
   post_build:
     commands:
       - aws s3 cp dist s3://tabelaprovisoria-site --recursive
+artifacts:
+  file:
+    - '**/*'
+  base-directory: dist
