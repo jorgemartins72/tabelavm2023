@@ -55,7 +55,7 @@
 <script setup>
 	import { useDayjs } from '@/composable/dayjs'
 	const ts = new Date().getTime()
-	const estadual = await fetch('http://json-tabela.s3-website-us-east-1.amazonaws.com/estadualquadra2023t1.json?ts=' + ts)
+	const estadual = await fetch('https://jsondata.voleimasterrj.com.br/estadualquadra2023t1.json?ts=' + ts)
 		.then(response => response.json())
 
 	const bgGenero = (genero => {
