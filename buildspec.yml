@@ -8,6 +8,9 @@ phases:
   build:
     commands:
       - npm run generate
+  post_build:
+    commands:
+      - aws s3 cp dist s3://tabelaprovisoria-site --recursive
 artifacts:
   file:
     - '**/*'
