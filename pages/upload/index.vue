@@ -1,12 +1,6 @@
 <template>
 	<div>
 		<input type="file" @change="upfile">
-		<pre>
-			{{ aaa }}
-		</pre>
-		<pre>
-			{{ bbb }}
-		</pre>
 	</div>
 </template>
 
@@ -25,9 +19,10 @@
 				headers: {
 					"Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 				},
-				// onResponse({ request, response, options }) {
-				// 	console.log(request, response, options)
-				// }
+				onResponse({ request, response, options }) {
+					// console.log(response.status)
+					window.location.reload()
+				},
 			},
 		)
 
