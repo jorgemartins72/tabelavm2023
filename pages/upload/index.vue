@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="mt-36">
 		<input type="file" @change="upfile">
 	</div>
 </template>

@@ -13,6 +13,7 @@
     "nuxt": "^3.3.3"
   },
   "dependencies": {
+    "@nuxtjs/google-fonts": "^3.0.0",
     "dayjs": "^1.11.7"
   }
 }
